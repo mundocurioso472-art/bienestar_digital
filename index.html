@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bienestar Digital: Redes Sociales con Balance</title>
+  <meta name="description" content="Consejos prácticos para usar redes sociales con equilibrio: salud mental, estudio y vida real.">
+  <style>
+    :root{
+      --azul:#1463F3;
+      --azul-osc:#0f4ec3;
+      --gris:#f4f6fb;
+      --texto:#1f2937;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      color:var(--texto);
+      background:#ffffff;
+      line-height:1.6;
+    }
+    header{
+      background:linear-gradient(120deg, var(--azul), #3aa0ff);
+      color:#fff;
+      padding:28px 16px;
+      text-align:center;
+    }
+    header h1{margin:0 0 8px;font-size:clamp(24px,4vw,36px)}
+    header p{margin:0;font-size:clamp(14px,2.2vw,18px);opacity:.95}
+    nav{
+      display:flex; gap:8px; justify-content:center; flex-wrap:wrap;
+      padding:10px 16px; background:#e9f2ff; border-bottom:1px solid #d7e6ff;
+    }
+    nav a{
+      text-decoration:none; color:#fff; background:var(--azul);
+      padding:10px 14px; border-radius:10px; font-weight:600; font-size:14px;
+    }
+    nav a:hover{background:var(--azul-osc)}
+    .contenedor{max-width:980px;margin:24px auto;padding:0 16px}
+    .tarjeta{
+      background:#fff; border:1px solid #e5e7eb; border-radius:14px;
+      padding:18px; margin-bottom:18px; box-shadow:0 6px 18px rgba(20,99,243,.08);
+    }
+    h2{margin-top:0;color:#0b3b99}
+    .grid{
+      display:grid; gap:16px;
+      grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+      align-items:start;
+    }
+    img{
+      width:100%; height:auto; border-radius:12px; display:block;
+      border:1px solid #e5e7eb;
+    }
+    ul{padding-left:18px; margin:10px 0}
+    .tips li{margin:6px 0}
+    .boton{
+      display:inline-block; background:var(--azul); color:#fff; text-decoration:none;
+      padding:10px 14px; border-radius:10px; font-weight:700; margin-top:8px;
+    }
+    .boton:hover{background:var(--azul-osc)}
+    footer{
+      text-align:center; padding:22px; background:var(--gris); color:#4b5563;
+      border-top:1px solid #e5e7eb;
+    }
+    .nota{
+      font-size:13px; color:#6b7280; margin-top:8px
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienestar Digital</h1>
+    <p>Usa tus redes con equilibrio: mente tranquila, estudio efectivo y vida real activa.</p>
+  </header>
+
+  <nav>
+    <a href="#que-es">¿Qué es?</a>
+    <a href="#senales">Señales de alerta</a>
+    <a href="#habitos">Hábitos saludables</a>
+    <a href="#descanso">Reto de 7 días</a>
+  </nav>
+
+  <main class="contenedor">
+    <section id="que-es" class="tarjeta">
+      <div class="grid">
+        <div>
+          <h2>¿Qué es el bienestar digital?</h2>
+          <p>
+            Es el equilibrio entre el tiempo que pasas en pantallas y las actividades que te hacen sentir bien:
+            dormir, estudiar con foco, convivir, hacer deporte y crear. No se trata de dejar las redes,
+            sino de usarlas con intención.
+          </p>
+          <a class="boton" href="#habitos">Quiero hábitos útiles</a>
+          <p class="nota">Tip: pregúntate “¿por qué abrí esta app?” antes de deslizar.</p>
+        </div>
+        <div>
+          <!-- Imagen 1 (1/2) -->
+          <img src="img/correr.jpg"
+               alt="Joven usando el teléfono con auriculares, luz azul" />
+        </div>
+      </div>
+    </section>
+
+    <section id="senales" class="tarjeta">
+      <h2>Señales de alerta</h2>
+      <ul class="tips">
+        <li>Duermes poco por “uno más” en el feed.</li>
+        <li>Comparas tu vida con lo que ves y te sientes peor.</li>
+        <li>Te cuesta concentrarte 20 minutos seguidos para estudiar.</li>
+        <li>Postergas tareas por notificaciones constantes.</li>
+        <li>Consumes contenido que no te suma (odio, desinformación, estafas).</li>
+      </ul>
+      <p class="nota">Si te identificas con varias, es buena idea ajustar tu rutina digital.</p>
+    </section>
+
+    <section id="habitos" class="tarjeta">
+      <div class="grid">
+        <div>
+          <h2>Hábitos saludables (fáciles de aplicar)</h2>
+          <ul class="tips">
+            <li><strong>Bloques de enfoque 25′</strong> + 5′ descanso (técnica Pomodoro).</li>
+            <li><strong>Notificaciones en silencio</strong> mientras estudias o duermes.</li>
+            <li><strong>Primero crea, luego consume:</strong> estudia, escribe o dibuja antes del scroll.</li>
+            <li><strong>Lista de cuentas positivas</strong> (aprendizaje, salud, finanzas, arte) y depura lo tóxico.</li>
+            <li><strong>Zona sin pantallas</strong> 60 minutos antes de dormir.</li>
+          </ul>
+        </div>
+        <div>
+          <!-- Imagen 2 (2/2) -->
+          <img src="img/cafe.jpg"
+               alt="Cuaderno, café y teléfono en modo enfoque para estudio" />
+        </div>
+      </div>
+    </section>
+
+    <section id="descanso" class="tarjeta">
+      <h2>Reto de 7 días</h2>
+      <ol>
+        <li>Día 1–2: desactiva notificaciones de apps que te distraen.</li>
+        <li>Día 3: organiza tus apps (estudio/creación en la primera pantalla).</li>
+        <li>Día 4: prueba 2 bloques de enfoque de 25′.</li>
+        <li>Día 5: deja el cel fuera de tu habitación al dormir.</li>
+        <li>Día 6: sigue solo cuentas que te aporten.</li>
+        <li>Día 7: planea tu semana sin pantalla 1 hora al día.</li>
+      </ol>
+      <a class="boton" href="#que-es" aria-label="Volver al inicio">Volver arriba</a>
+      <p class="nota">Si quieres, convierte este reto en póster e imprímelo para tu clase.</p>
+    </section>
+  </main>
+
+  <footer>
+    Hecho con 💙 para estudiantes — Usa la tecnología a tu favor.
+  </footer>
+</body>
+</html>
